@@ -1,5 +1,5 @@
-import { ChessContextProvider } from "@/hooks/GameContext";
-import Play from "./Play";
+import { ChessContextProvider } from "@/hooks/ChessContext";
+import { Play } from "./Play";
 
 const PlayPage = () => {
   return (

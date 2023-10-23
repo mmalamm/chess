@@ -1,9 +1,11 @@
-import Play from "@/components/Play/Play";
+"use client";
+
+import PlayPage from "@/components/Play";
 
 export default function Home() {
   return (
     <main>
-      <Play />
+      <PlayPage />
     </main>
   );
 }
