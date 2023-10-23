@@ -1,4 +1,4 @@
-export type GameState ={
+export type GameState = {
   whosTurn: PlayerColor;
   turns: TurnString[];
   castle: {
@@ -14,6 +14,8 @@ export type PlayerColor = "b" | "w";
 export type CoordLetter = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h";
 export type CoordNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 export type Coord = `${CoordLetter}${CoordNumber}`;
+type CutPosition = "xb" | "xw";
+export type CoordOrCut = Coord | CutPosition;
 
 type NormalTurn = `${Coord}${Coord}`;
 type PromotionTurn = `${NormalTurn}_${PromotionOptions}`;

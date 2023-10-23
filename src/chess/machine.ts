@@ -6,7 +6,7 @@ import { TurnDetail } from "@/chess/utils/types";
 import { isPromotionTurn } from "@/chess/utils/helpers";
 import { processTurn } from "./utils/processTurn/processTurn";
 
-export const selfChessMachine = createMachine(
+export const chessMachine = createMachine(
   {
     predictableActionArguments: true,
     id: "chess",

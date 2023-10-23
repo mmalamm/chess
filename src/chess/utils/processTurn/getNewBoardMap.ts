@@ -45,7 +45,6 @@ function applyEnPassantTurn(
   return newBoardMap;
 }
 
-
 function applyPromotionTurn(
   turn: string,
   { boardMap, whosTurn }: Pick<GameState, "boardMap" | "whosTurn">
@@ -72,7 +71,7 @@ const castleMovesMap = {
   b: ["e8c8", "e8g8"],
 };
 
-function isCastleMove(
+export function isCastleMove(
   turn: string,
   { whosTurn, boardMap }: Pick<GameState, "whosTurn" | "boardMap">
 ) {

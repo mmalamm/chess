@@ -178,7 +178,7 @@ describe("checkTurn_enPassant", () => {
     expect(result).toBe(true);
   });
 
-  it("black Should Not Be Allowed To En Passant If White Pawn Didnt Move Two Squares Last Turn", () => {
+  it("black should not be allowed to en passant if white pawn didnt move two squares last turn", () => {
     const result = checkTurn({
       turn: "e4f3",
       gameData:
